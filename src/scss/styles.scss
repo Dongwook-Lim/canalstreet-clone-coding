@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Monoton&family=Montserrat&family=Roboto+Mono&display=swap');
+
+body{
+    font-family: 'Roboto Mono', monospace;
+    margin-right: 180px;
+    box-sizing: border-box;
+}
+
+h1, h2{
+    font-family: 'Cormorant Garamond', serif;
+}
+
+footer{
+    ul{
+        font-family: 'Montserrat', sans-serif;
+    }
+}
+
+.logo{
+    font-family: 'Monoton', cursive;
+    font-size: 1.2rem;
+    position: fixed;
+    left: 60px;
+    top: 60px;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 180px;
+    ul{
+        display: grid;
+        grid-template-columns: repeat(3, 60px);
+        grid-template-rows: 100vh;
+        li{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &:nth-child(1){
+                background-color: #5DA2EC;
+            }
+            &:nth-child(2){
+                background-color: #F64444;
+            }
+            &:nth-child(3){
+                background-color: #FFB400;
+            }
+            &:hover{
+                cursor: pointer;
+            }
+            span{
+                transform: rotateZ(90deg);
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
+
+main{
+    header{
+        .title__wrapper{
+            height: 100vh;
+            h2{
+                font-size: 5rem;
+                line-height: 110%;
+                padding: 250px 180px 0 60px;
+            }
+        }
+        img{
+            width: 100%;
+        }
+    }
+}
